@@ -10,15 +10,15 @@ Batch create motor vehicle PPSR registrations
 
 # Frontend
 	 Navigat to ppsr-batch-registration\frontend
-	 docker-compose down -v --remove-orphans   ( To Remove orphans)
-	 docker-compse up (To build and run the application)
+	 docker compose down -v --remove-orphans   ( To Remove orphans)
+	 docker compose up (To build and run the application)
 	 Access the running application  at http://localhost:3000
 
 # Backend
 	 Navigat to ppsr-batch-registration\backend
-	 docker-compose down -v --remove-orphans   ( To Remove orphans)
-	 docker-compose build --no-cache (To build the application)
-	 docker-compose up (To run the application and db)
+	 docker compose down -v --remove-orphans   ( To Remove orphans)
+	 docker compose build --no-cache (To build the application)
+	 docker compose up (To run the application and db)
 	 Access the running application  at http://localhost:8080/swagger/index.html
 
 # To Run updates to DB through migrations
