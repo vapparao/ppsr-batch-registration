@@ -1,0 +1,54 @@
+[
+  {
+    "ContainingType": "BatchController",
+    "Method": "UploadBatch",
+    "RelativePath": "api/batches/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "batch",
+        "Type": "Application.Features.BatchOperation.Dtos.CreateBatchDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Features.BatchOperation.Dtos.BatchDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RegistrationController",
+    "Method": "ProcessBatch",
+    "RelativePath": "api/Registration/process",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Registration",
+        "Type": "Application.Features.BatchOperation.Dtos.CreateRegistrationsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Features.BatchOperation.Dtos.BatchDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
